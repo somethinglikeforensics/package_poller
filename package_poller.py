@@ -149,11 +149,11 @@ class JsPollDb:
     def snippet_reporter(self, matches_locs_list, target):              
 
         summary_text = (
-                        f'\nThis is an email from the SOC iHUBs Javascript Package Monitor which polls javascript libraries used by TalkTalks public facing websites.\n'
+                        f'\nThis is an email from Package Poller which polls javascript libraries on public facing websites.\n'
                         f'{round((len(matches_locs_list)+1)/2)} changes were detected in the content of a package hosted at {target["url"]}\n'
-                        f'This packages is serving TalkTalk Website: XXX URL.\n\n'
+                        f'This packages is serving Website: XXX URL.\n\n'
                         f'The list below provides snippets of the original and changed text and should be reviewed for malicious indicators\n'
-                        f'Copies of the full files are retained on the SOC iHub and can be provided for additional analysis.\n\n\n')          
+                        f'Copies of the full files are retained on for additional analysis.\n\n\n')          
                               
         
         counter = 1  
